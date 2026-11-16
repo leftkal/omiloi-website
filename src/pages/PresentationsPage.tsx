@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react'
 const decks = [
   { id: 'intro', title: 'Γνωριμία με το Interactive 3D Lab', slides: '14 διαφάνειες', file: 'interactive-3d-lab-01.pptx' },
   { id: 'design', title: 'Εισαγωγή στο 3D Design', slides: '10 διαφάνειες', file: 'interactive-3d-lab-02.pptx' },
+  { id: 'tinkercad-ornament', title: 'Tinkercad: Το δικό μου στολίδι', slides: '13 διαφάνειες', file: 'interactive-3d-lab-03.pptx' },
 ]
 
 const usefulLinks = [
