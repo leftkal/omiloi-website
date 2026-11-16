@@ -9,11 +9,12 @@ const linkClass = ({ isActive }: { isActive: boolean }) => `rounded-xl px-3 py-2
 export function Layout() {
   const [open, setOpen] = useState(false)
   const links = <>
-    <NavLink to="/" end className={linkClass} onClick={() => setOpen(false)}>Αρχική</NavLink>
-    <NavLink to="/club" className={linkClass} onClick={() => setOpen(false)}>Ο Όμιλος</NavLink>
-    <NavLink to="/book" className={linkClass} onClick={() => setOpen(false)}>Βιβλίο Ομίλου</NavLink>
-    <NavLink to="/presentations" className={linkClass} onClick={() => setOpen(false)}>Παρουσιάσεις</NavLink>
-    <NavLink to="/registration" className={linkClass} onClick={() => setOpen(false)}>Δήλωση Ομάδας</NavLink>
+    <NavLink to="/" end className={linkClass} onClick={() => setOpen(false)}>Όμιλοι</NavLink>
+    <NavLink to="/interactive-3d-lab" end className={linkClass} onClick={() => setOpen(false)}>Αρχική</NavLink>
+    <NavLink to="/interactive-3d-lab/club" className={linkClass} onClick={() => setOpen(false)}>Ο Όμιλος</NavLink>
+    <NavLink to="/interactive-3d-lab/book" className={linkClass} onClick={() => setOpen(false)}>Βιβλίο Ομίλου</NavLink>
+    <NavLink to="/interactive-3d-lab/presentations" className={linkClass} onClick={() => setOpen(false)}>Παρουσιάσεις</NavLink>
+    <NavLink to="/interactive-3d-lab/registration" className={linkClass} onClick={() => setOpen(false)}>Δήλωση Ομάδας</NavLink>
   </>
   return <div className="relative min-h-screen overflow-x-hidden">
     <div aria-hidden className="pointer-events-none absolute -top-48 left-1/2 h-[34rem] w-[34rem] -translate-x-1/2 rounded-full bg-sky-200/55 blur-3xl" />

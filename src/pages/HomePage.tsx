@@ -13,8 +13,8 @@ export function HomePage() {
         <p className="mt-3 max-w-xl font-medium text-slate-500">{club.school}</p>
         <p className="mt-7 max-w-2xl text-lg leading-relaxed text-slate-600">{club.description}</p>
         <div className="mt-8 flex flex-wrap gap-3">
-          <Link to="/registration" className="button-primary">Δήλωση Ομάδας <ArrowRight size={18} /></Link>
-          <Link to="/club" className="button-secondary">Δείτε τον Όμιλο</Link>
+          <Link to="/interactive-3d-lab/registration" className="button-primary">Δήλωση Ομάδας <ArrowRight size={18} /></Link>
+          <Link to="/interactive-3d-lab/club" className="button-secondary">Δείτε τον Όμιλο</Link>
         </div>
       </div>
       <div className="relative mx-auto w-full max-w-md">
