@@ -62,7 +62,7 @@ export function ClubBookPage() {
 function ModelGallery({ items, selectedIndex, onSelect, previewDirectory, modelDirectory, label, detailTitle }: { items: GalleryItem[]; selectedIndex: number; onSelect: (index: number) => void; previewDirectory: string; modelDirectory: string; label: string; detailTitle: string }) {
   const item = items[selectedIndex]
   return <div className="mt-8 grid gap-5 lg:grid-cols-[250px_1fr]">
-    <div className="grid grid-cols-2 gap-3 lg:block lg:space-y-2">
+    <div className="model-list grid grid-cols-2 gap-3 lg:block lg:max-h-[424px] lg:space-y-2 lg:overflow-y-auto lg:overscroll-contain lg:pr-2" aria-label="Λίστα έργων">
       {items.map((entry, index) => <button key={entry.model} onClick={() => onSelect(index)} className={`overflow-hidden rounded-2xl border text-left transition lg:flex lg:items-center lg:gap-3 lg:p-2 ${index === selectedIndex ? 'border-cyan bg-cyan/10 shadow-sm' : 'border-sky-100 bg-white hover:border-cyan/40'}`}>
         <img src={`${import.meta.env.BASE_URL}images/${previewDirectory}/${entry.preview}`} alt="" className="aspect-[16/7] w-full object-contain bg-slate-50 p-1 lg:h-12 lg:w-20 lg:rounded-xl" />
         <span className="block px-2 py-2 text-sm font-extrabold text-slate-700 lg:px-0">{entry.name}</span>

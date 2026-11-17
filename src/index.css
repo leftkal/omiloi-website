@@ -20,3 +20,12 @@
   .button-secondary { @apply inline-flex items-center justify-center gap-2 rounded-xl border border-violet/20 bg-violet/10 px-4 py-2.5 font-bold text-violet transition hover:-translate-y-0.5 hover:border-violet/40 hover:bg-violet/15; }
   .eyebrow { @apply inline-flex rounded-full bg-cyan/10 px-3 py-1 text-sm font-bold text-cyan; }
 }
+
+.model-list {
+  scrollbar-color: #9ddfed transparent;
+  scrollbar-width: thin;
+}
+
+.model-list::-webkit-scrollbar { width: 0.55rem; }
+.model-list::-webkit-scrollbar-thumb { background: #9ddfed; border: 2px solid transparent; border-radius: 999px; background-clip: content-box; }
+.model-list::-webkit-scrollbar-track { background: transparent; }
