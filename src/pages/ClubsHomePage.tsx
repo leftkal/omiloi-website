@@ -8,7 +8,7 @@ export function ClubsHomePage() {
   return <main className="shell py-12 sm:py-16">
     <header className="mx-auto max-w-3xl text-center">
       <p className="eyebrow">{club.school} · {club.year}</p>
-      <h1 className="mt-5 text-4xl font-extrabold tracking-tight text-slate-800 sm:text-5xl">Όμιλοι Δημιουργίας</h1>
+      <h1 className="mt-5 text-4xl font-extrabold tracking-tight text-slate-800 sm:text-5xl">Interactive 3D Lab &amp; Game Lab</h1>
       <p className="mt-4 text-lg leading-relaxed text-slate-600">Επιλέξτε έναν Όμιλο για να δείτε το υλικό, τις εργασίες και την πορεία του.</p>
     </header>
 
